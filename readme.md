@@ -1,6 +1,6 @@
 # Initialisation d'un projet NodeJs
 
-### Commande :
+### Commande 
 
 - npm init 
     - npm init va initialiser un projet nodejs, plus précisément le fichier de configuration du projet
@@ -29,3 +29,11 @@
 ```
 
 - node -- watch index.js permet de remplacer la dépendance nodemon en ajoutant nativement un hot-reload à notre application
+
+### Insatallation des dépendances
+
+- Dépendance de développement
+    - Pour enregistre une dépendance uniquement nécéssaire en développement on va utiliser la commande : npm install --save-dev "nom de la dépendance ( par exemple : npm i --save-dev nodemon)
+
+- Dépendance de production 
+    - Pour enregistrer une dépendance nécéssaire pour toute la durée de vie du projet, on va utiliser la commande npm install "nom de la dépendance" (par exemple npm i express)
