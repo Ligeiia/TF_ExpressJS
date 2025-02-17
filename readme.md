@@ -8,3 +8,24 @@
     Ce fichier est le package.json qui comprend plusieurs éléments de configuraton de base [Lien vers configuration package.json](https://github.com/npm/cli/blob/latest/docs/lib/content/configuring-npm/package-json.md#files)
 - npm init -y
     - npm init -y va créer une configuration de base en bypassant les questions de création
+
+- Création de dossier 
+    - mkdir NOM_DU_DOSSIER
+
+- Accéder a un dossier 
+    - cd NOM_DU_DOSSIER
+
+(mkdir NOM_DU DOSSIER > cd NOM_DU DOSSIER > npm init > > version > description NOM > >git repository LIEN DU REPOSITORY GIT > author NOM > license > ok? > )
+
+### Package.json
+
+- Scripts:
+```javascript
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+```
+
+- node -- watch index.js permet de remplacer la dépendance nodemon en ajoutant nativement un hot-reload à notre application
