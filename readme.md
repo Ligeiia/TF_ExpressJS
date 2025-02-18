@@ -2,6 +2,11 @@
 
 ### Commande 
 
+- Création de dossier 
+    - mkdir NOM_DU_DOSSIER
+
+(mkdir NOM_DU DOSSIER > cd NOM_DU DOSSIER > npm init > > version > description NOM > >git repository LIEN DU REPOSITORY GIT > author NOM > license > ok? > )
+
 - npm init 
     - npm init va initialiser un projet nodejs, plus précisément le fichier de configuration du projet
     - npm init va vous poser des questions pour créer une identification et une configuration basique de votre projet
@@ -9,13 +14,8 @@
 - npm init -y
     - npm init -y va créer une configuration de base en bypassant les questions de création
 
-- Création de dossier 
-    - mkdir NOM_DU_DOSSIER
-
 - Accéder a un dossier 
     - cd NOM_DU_DOSSIER
-
-(mkdir NOM_DU DOSSIER > cd NOM_DU DOSSIER > npm init > > version > description NOM > >git repository LIEN DU REPOSITORY GIT > author NOM > license > ok? > )
 
 ### Package.json
 

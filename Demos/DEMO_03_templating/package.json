@@ -1,5 +1,5 @@
 {
-  "name": "exo_01",
+  "name": "demo_03_templating",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "description": "",
   "dependencies": {
     "express": "^5.0.1",
-    "uuid": "^11.0.5"
+    "pug": "^3.0.3"
   }
 }
