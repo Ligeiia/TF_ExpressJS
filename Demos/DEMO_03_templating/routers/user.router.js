@@ -6,32 +6,32 @@ const users = [
         name: "Sarah Connor",
         email: "sarah@resistance.us",
         bio: "La mère du sauveur de l'humanité",
-        avatar: "",
+        avatar: "Sarah.webp",
     },{
         id: 2,
         name: "Paul Atreides",
         email: "paul@atreides.dune",
         bio: "Le sauveur de la planète",
-        avatar: "",
-    }
+        avatar: "Paul.webp",
+    },
 ];
 
 router.get("/", (req, res) => {
-    res.status(200).render('/user/index', {
+    res.status(200).render('user/index', {
             title: "Liste d'utilisateurs",
-            users
+            users,
     });
 });
 
-router.get("'/:id",(req, res) => {
+router.get("/:id",(req, res) => {
     const { id } = req.params;
-    const user = users.find((u) => u.id === id);
+    const user = users.find((u) => u.id === parseInt(id));
 
     if (!user) {
-        res.status(404).json({ error: "L'utilisateur n'esxiste pas" })
+        return res.status(404).json({ error: "L'utilisateur n'esxiste pas" })
     }
 
-    res.status(200).render("/user/details", {
+    res.status(200).render("user/details", {
         title: "Profile",
         user,
     });
