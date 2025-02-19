@@ -1,0 +1,10 @@
+extends ../layout
+
+block main 
+    h1= title 
+    .grid 
+        each product in products  
+            .card 
+                h2= product.nom  
+                p= product.description
+                a.button(href=`products/${product.id}`) product details
